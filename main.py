@@ -220,10 +220,10 @@ def method_3(char_arr, L, CG_min, CG_max, D):
     
     # Generation
     n_gen = 10
-    n_shuffle = 1000 #1000
-    n_mutate = 1000 #1000
-    n_remove = 0.25 #0.25
-    n_crossover = 10 #1000
+    n_shuffle = L*10 #1000
+    n_mutate = L*10 #1000
+    n_remove = 0.20 #0.25
+    n_crossover = L*10 #1000
     
     n_pop = []
     best_generation = []

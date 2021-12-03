@@ -320,16 +320,16 @@ M = 1
 if __name__ == "__main__":
     for i in range(1,len(sys.argv),2):
         if sys.argv[i] == '-l':
-            L = sys.argv[i+1]
+            L = int(sys.argv[i+1])
         elif sys.argv[i] == '-d':
-            D = sys.argv[i+1]
+            D = float(sys.argv[i+1])
         elif sys.argv[i] == '-min':
-            CG_min = sys.argv[i+1]
+            CG_min = float(sys.argv[i+1])
         elif sys.argv[i] == '-max':
-            CG_max = sys.argv[i+1]
+            CG_max = float(sys.argv[i+1])
         elif sys.argv[i] == '-m':
-            M = sys.argv[i+1]
-
+            M = int(sys.argv[i+1])
+            
 print('Length: ', L)
 print('CG_min: ', CG_min)
 print('CG_max: ', CG_max)
